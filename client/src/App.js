@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     fetch(url("/api/"))
       .then(res=>res.json())
-      .then(apiData = setData(apiData.data))
+      .then(apiData => setData(apiData.data))
   },[])
 
   return (
